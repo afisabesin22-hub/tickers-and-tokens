@@ -313,35 +313,58 @@ button:focus-visible {
   }
 }
 
-/* Cryptocurrency news page */
+/* =====================================
+   STOCK MARKET PAGE
+   ===================================== */
 
-.update-note {
-  color: var(--muted);
-  font-size: 0.9rem;
-  margin-top: 20px;
+.stock-table-section {
+  background-color: #101b2d;
 }
 
-.article-meta {
+.market-table {
+  --bs-table-bg: var(--surface);
+  --bs-table-striped-bg: #1b304b;
+  --bs-table-hover-bg: #24405c;
+  --bs-table-color: var(--text);
+  --bs-table-border-color: var(--border);
+
+  border: 1px solid var(--border);
+  font-size: 0.95rem;
+}
+
+.market-table thead th {
+  background-color: #203b55;
+  color: var(--accent);
+  padding: 18px;
+}
+
+.market-table tbody td,
+.market-table tbody th {
+  padding: 18px;
+  vertical-align: middle;
+}
+
+.market-table caption {
+  caption-side: bottom;
   color: var(--muted);
   font-size: 0.85rem;
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 12px;
-  margin-bottom: 18px;
+  padding: 12px 0;
 }
 
-/* Improve spacing between news cards */
-.news-card h3 {
-  line-height: 1.4;
-}
-
-.news-card a {
-  display: inline-block;
+.table-source {
+  color: var(--muted);
+  font-size: 0.85rem;
   margin-top: 15px;
-  transition: color 0.3s ease;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .news-card a {
-    transition: none;
+@media (max-width: 575px) {
+  .market-table {
+    font-size: 0.85rem;
+  }
+
+  .market-table tbody td,
+  .market-table tbody th,
+  .market-table thead th {
+    padding: 12px;
   }
 }
