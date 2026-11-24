@@ -368,3 +368,103 @@ button:focus-visible {
     padding: 12px;
   }
 }
+
+
+/* =====================================
+   MARKET BASICS PAGE
+   ===================================== */
+
+/* Financial glossary section */
+
+.glossary-section {
+  background-color: #101b2d;
+}
+
+.glossary-item {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  height: 100%;
+}
+
+.glossary-item dt {
+  color: var(--accent);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.glossary-item dd {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
+.glossary-source {
+  color: var(--muted);
+  margin-top: 25px;
+  font-size: 0.9rem;
+}
+
+/* Frequently asked questions */
+
+.faq-container {
+  max-width: 850px;
+}
+
+.faq-item {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.faq-item summary {
+  color: var(--text);
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.faq-item summary:hover {
+  color: var(--accent);
+}
+
+.faq-item summary:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.faq-item p {
+  color: var(--muted);
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+/* Educational resource links */
+
+.resource-links {
+  padding-left: 20px;
+}
+
+.resource-links li {
+  margin-bottom: 12px;
+}
+
+.resource-links a {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+/* Mobile adjustments */
+
+@media (max-width: 575px) {
+  .glossary-item {
+    padding: 20px;
+  }
+
+  .faq-item {
+    padding: 16px;
+  }
+}
