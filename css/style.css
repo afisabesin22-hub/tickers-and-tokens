@@ -468,3 +468,26 @@ button:focus-visible {
     padding: 16px;
   }
 }
+
+
+/* Website logo */
+
+.site-logo {
+  display: block;
+  width: 240px;
+  max-width: 100%;
+  height: auto;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+}
+
+/* Mobile logo size */
+@media (max-width: 575px) {
+  .site-logo {
+    width: 170px;
+  }
+}
